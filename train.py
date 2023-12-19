@@ -69,21 +69,12 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, default='cuda:0')
     parser.add_argument('--dataset', type=str, default='WikiCS')
     parser.add_argument('--param', type=str, default='local:wikics.json')
-    parser.add_argument('--seed', type=int, default=39788)  # for torch
+    parser.add_argument('--seed', type=int, default=39788)
     parser.add_argument('--cls_seed', type=int, default=12345)
-    parser.add_argument('--batch_size', type=int, default=1024)
-    parser.add_argument('--d_num', type=int, default=1024)
     parser.add_argument('--verbose', type=str, default='train,eval,final')
-    parser.add_argument('--log_dir', type=str, default=None, metavar='TENSORBOARD LOG PATH')
-    parser.add_argument('--save_split', type=str, nargs='?')
-    parser.add_argument('--load_split', type=str, nargs='?')
     parser.add_argument('--validate_interval', type=int, default=100)
     parser.add_argument('--drop_edge_thresh', type=float, default=1.)
     parser.add_argument('--drop_feature_thresh', type=float, default=1.)
-    parser.add_argument('--alpha', type=float, default=0.5)
-    parser.add_argument('--beta', type=float, default=0.5)
-    parser.add_argument('--delta', type=float, default=1.5)
-    parser.add_argument('--gamma', type=float, default=0.5)
  
     default_param = {
         'learning_rate': 0.01,
@@ -99,6 +90,11 @@ if __name__ == '__main__':
         'tau': 0.4,
         'num_epochs': 3000,
         'weight_decay': 1e-5,
+        'alpha':0.5,
+        'beta':0.5,
+        'delta':1.5,
+        'gamma':0.5,
+        
     }
 
     param_keys = default_param.keys()
@@ -133,7 +129,6 @@ if __name__ == '__main__':
     torch.manual_seed(torch_seed)
     random.seed(12345)
     if args.cls_seed is not None:
-        # for data splitting of cls test
         np.random.seed(args.cls_seed)
 
     device = torch.device(args.device)
