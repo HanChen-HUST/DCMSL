@@ -1,7 +1,7 @@
 # DCMSL: Dynamic Community Strength-boosted Multi-Scale Graph Contrastive Learning
 
 PyTorch implementation for ACM Transactions on Information Systems Under Review paper "DCMSL: Dynamic Community Strength-boosted Multi-Scale Graph Contrastive
-Learning" .
+Learning".
 
 # Dependencies
 * Python 3.8.8
