@@ -3,7 +3,7 @@
 PyTorch implementation for ACM Transactions on Information Systems Under Review paper "DCMSL: Dynamic Community Strength-boosted Multi-Scale Graph Contrastive
 Learning".
 
-# Dependencies
+# Requirements
 * Python 3.8.8
 * PyTorch 1.8.1
 * torch_geometric 2.0.1
