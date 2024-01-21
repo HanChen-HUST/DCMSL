@@ -1,6 +1,6 @@
 # DCMSL: Dynamic Community Strength-boosted Multi-Scale Graph Contrastive Learning
 
-PyTorch implementation for ACM Transactions on Information Systems Under Review paper "DCMSL: Dynamic Community Strength-boosted Multi-Scale Graph Contrastive
+PyTorch implementation for IEEE Transactions on Knowledge and Data Engineering (TKDE) Under Review paper "DCMSL: Dynamic Community Strength-boosted Multi-Scale Graph Contrastive
 Learning".
 
 # Requirements
