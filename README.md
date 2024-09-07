@@ -1,6 +1,6 @@
 # DCMSL: Dual influenced Community Strength-boosted Multi-Scale Graph Contrastive Learning
 
-PyTorch implementation for KBS Under Review paper "DCMSL: Dual influenced Community Strength-boosted Multi-Scale Graph Contrastive Learning".
+PyTorch implementation for KBS accepted paper "DCMSL: Dual influenced Community Strength-boosted Multi-Scale Graph Contrastive Learning".
 
 # Requirements
 * Python 3.8.8
